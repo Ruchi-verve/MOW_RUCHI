@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto_regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RewardPoints" customModule="MobilityOnWheel" customModuleProvider="target">
+            <connections>
+                <outlet property="btnRewardClose" destination="jo2-yM-Hv5" id="NuH-De-2Wn"/>
+                <outlet property="contentView" destination="CVS-4i-ESA" id="E4E-qV-gbw"/>
+                <outlet property="txtRewardPoint" destination="bZo-dn-v7u" id="73d-dA-boO"/>
+                <outlet property="viewReardsPoint" destination="sTq-DM-CyA" id="oRn-Gg-rJ4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVS-4i-ESA">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTq-DM-CyA">
+                            <rect key="frame" x="15" y="291" width="384" height="270"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qzh-B7-DcL">
+                                    <rect key="frame" x="15" y="60" width="354" height="99"/>
+                                    <string key="text">Rider Reward Points are earned at a rate of one (1) point for each paid day of scooter and power wheelchair rentals only. Once fourteen (14) Rider Reward Points are acquired, a Bonus Day is earned and is available for use on a subsequent trip. Fourteen (14) Rider Reward Points are equal to one (1) Bonus Day.</string>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                                    </variation>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZo-dn-v7u">
+                                    <rect key="frame" x="15" y="210" width="354" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="U9G-C7-LQx">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                        </constraint>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currrent Rider Rewards Balance" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrg-Hx-DEB">
+                                    <rect key="frame" x="15" y="174" width="354" height="21"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="Stp-g0-zAR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                                    </variation>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jo2-yM-Hv5">
+                                    <rect key="frame" x="344" y="15" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="QEG-iH-BTU">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                        </constraint>
+                                        <constraint firstAttribute="width" constant="25" id="Vpv-7u-kJV">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                        </constraint>
+                                    </constraints>
+                                    <state key="normal" image="icon_close"/>
+                                    <connections>
+                                        <action selector="btnRewardCloseClick:" destination="-1" eventType="touchUpInside" id="rDf-EH-LSa"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Qzh-B7-DcL" secondAttribute="trailing" constant="15" id="4ec-SL-yyv">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstItem="Qzh-B7-DcL" firstAttribute="top" secondItem="jo2-yM-Hv5" secondAttribute="bottom" constant="20" id="6vI-3x-hl3"/>
+                                <constraint firstItem="bZo-dn-v7u" firstAttribute="leading" secondItem="sTq-DM-CyA" secondAttribute="leading" constant="15" id="Cd6-cD-dE1">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="jo2-yM-Hv5" secondAttribute="trailing" constant="15" id="DY0-TZ-XMo">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="Yrg-Hx-DEB" secondAttribute="trailing" constant="15" id="EIC-qv-9pB">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstItem="bZo-dn-v7u" firstAttribute="top" secondItem="Yrg-Hx-DEB" secondAttribute="bottom" constant="15" id="LcS-uW-98G"/>
+                                <constraint firstItem="Yrg-Hx-DEB" firstAttribute="top" secondItem="Qzh-B7-DcL" secondAttribute="bottom" constant="15" id="Oyc-jc-xDv"/>
+                                <constraint firstItem="jo2-yM-Hv5" firstAttribute="top" secondItem="sTq-DM-CyA" secondAttribute="top" constant="15" id="WOQ-9F-8q8"/>
+                                <constraint firstAttribute="bottom" secondItem="bZo-dn-v7u" secondAttribute="bottom" constant="20" id="XTp-QA-HkB"/>
+                                <constraint firstItem="Yrg-Hx-DEB" firstAttribute="leading" secondItem="sTq-DM-CyA" secondAttribute="leading" constant="15" id="abM-jq-qKg">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstItem="Qzh-B7-DcL" firstAttribute="leading" secondItem="sTq-DM-CyA" secondAttribute="leading" constant="15" id="dYf-wz-DIh"/>
+                                <constraint firstAttribute="trailing" secondItem="bZo-dn-v7u" secondAttribute="trailing" constant="15" id="hac-ia-g3p"/>
+                                <constraint firstAttribute="height" constant="270" id="zV1-9i-JVk">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="540"/>
+                                </constraint>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.66832665680000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="sTq-DM-CyA" firstAttribute="centerX" secondItem="CVS-4i-ESA" secondAttribute="centerX" id="3XS-hJ-4tg"/>
+                        <constraint firstAttribute="trailing" secondItem="sTq-DM-CyA" secondAttribute="trailing" constant="15" id="aCd-m3-4fd"/>
+                        <constraint firstItem="sTq-DM-CyA" firstAttribute="leading" secondItem="CVS-4i-ESA" secondAttribute="leading" constant="15" id="fEw-hn-rFV"/>
+                        <constraint firstItem="sTq-DM-CyA" firstAttribute="centerY" secondItem="CVS-4i-ESA" secondAttribute="centerY" id="lzc-XV-srF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CVS-4i-ESA" secondAttribute="bottom" id="HVh-5o-zFV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CVS-4i-ESA" secondAttribute="trailing" id="Rdy-Ib-1QR"/>
+                <constraint firstItem="CVS-4i-ESA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ach-mQ-x5s"/>
+                <constraint firstItem="CVS-4i-ESA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r4T-cf-s7F"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_close" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

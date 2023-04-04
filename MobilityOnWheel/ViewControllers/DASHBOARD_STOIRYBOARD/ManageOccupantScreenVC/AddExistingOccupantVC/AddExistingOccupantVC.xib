@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto_bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="roboto_regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddExistingOccupantVC" customModule="MobilityOnWheel" customModuleProvider="target">
+            <connections>
+                <outlet property="lblOccupantName" destination="g4C-vO-coC" id="B2m-Ny-fZR"/>
+                <outlet property="lblOperatorName" destination="Xfs-zD-wJB" id="2Da-Mz-EPT"/>
+                <outlet property="lblSelect" destination="PG8-GI-D1r" id="agK-FI-cYj"/>
+                <outlet property="tblExistiongOccupant" destination="xW0-WK-tQl" id="dUH-6u-cFA"/>
+                <outlet property="txtSearch" destination="9kG-0d-f9j" id="95A-wn-tkX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="iQq-QD-d80"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmP-KF-NqF">
+                    <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQf-Ke-5Jb">
+                            <rect key="frame" x="8" y="15" width="60" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="I6S-3W-zra"/>
+                                <constraint firstAttribute="height" constant="20" id="pwQ-BJ-UfZ"/>
+                            </constraints>
+                            <state key="normal" title="Back" image="backText"/>
+                            <connections>
+                                <action selector="btnBackClick:" destination="-1" eventType="touchUpInside" id="RPs-wD-nmM"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWX-S5-ZHw">
+                            <rect key="frame" x="399" y="12.5" width="0.0" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="8be-H3-92V"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.12549019610000001" green="0.3294117647" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="JZk-ec-gJz"/>
+                        <constraint firstItem="yQf-Ke-5Jb" firstAttribute="leading" secondItem="vmP-KF-NqF" secondAttribute="leading" constant="8" id="UxM-In-ARB"/>
+                        <constraint firstItem="yWX-S5-ZHw" firstAttribute="centerY" secondItem="vmP-KF-NqF" secondAttribute="centerY" id="ZFJ-AS-9MT"/>
+                        <constraint firstItem="yQf-Ke-5Jb" firstAttribute="centerY" secondItem="vmP-KF-NqF" secondAttribute="centerY" id="eEy-hJ-87a"/>
+                        <constraint firstAttribute="trailing" secondItem="yWX-S5-ZHw" secondAttribute="trailing" constant="15" id="tV4-SN-LA5"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Occupant" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3B1-9l-XwY">
+                    <rect key="frame" x="10" y="109" width="394" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="g6l-Po-o21"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please enter a Occupant Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9kG-0d-f9j">
+                    <rect key="frame" x="20" y="174" width="374" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6xJ-dH-w10"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="OnE-a8-w6o"/>
+                    </connections>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xW0-WK-tQl">
+                    <rect key="frame" x="10" y="280" width="394" height="592"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DOQ-Ad-5vq"/>
+                        <outlet property="delegate" destination="-1" id="hCJ-5S-EAN"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PG8-GI-D1r">
+                    <rect key="frame" x="15" y="244" width="50" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Kld-LJ-SEi"/>
+                        <constraint firstAttribute="width" constant="50" id="LeU-RI-dbi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occupant Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4C-vO-coC">
+                    <rect key="frame" x="95" y="244" width="101.5" height="21"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Operator Name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfs-zD-wJB">
+                    <rect key="frame" x="226.5" y="244" width="96" height="21"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3B1-9l-XwY" secondAttribute="trailing" constant="10" id="11K-gx-NLj"/>
+                <constraint firstItem="9kG-0d-f9j" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="3dN-it-Y4o"/>
+                <constraint firstItem="xW0-WK-tQl" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="10" id="9Ve-JW-0OJ"/>
+                <constraint firstItem="vmP-KF-NqF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Anh-rH-MlV"/>
+                <constraint firstItem="g4C-vO-coC" firstAttribute="top" secondItem="PG8-GI-D1r" secondAttribute="top" id="FCf-Vt-thh"/>
+                <constraint firstItem="PG8-GI-D1r" firstAttribute="top" secondItem="9kG-0d-f9j" secondAttribute="bottom" constant="20" id="FjG-XA-cw4"/>
+                <constraint firstItem="Xfs-zD-wJB" firstAttribute="height" secondItem="PG8-GI-D1r" secondAttribute="height" id="I8F-XC-dHU"/>
+                <constraint firstItem="Xfs-zD-wJB" firstAttribute="top" secondItem="PG8-GI-D1r" secondAttribute="top" id="Kaq-z9-0St"/>
+                <constraint firstItem="Xfs-zD-wJB" firstAttribute="leading" secondItem="g4C-vO-coC" secondAttribute="trailing" constant="30" id="OC0-8f-XcR"/>
+                <constraint firstItem="g4C-vO-coC" firstAttribute="leading" secondItem="PG8-GI-D1r" secondAttribute="trailing" constant="30" id="QcE-K7-0gD"/>
+                <constraint firstItem="9kG-0d-f9j" firstAttribute="top" secondItem="3B1-9l-XwY" secondAttribute="bottom" constant="15" id="Wcm-wt-dUL"/>
+                <constraint firstItem="3B1-9l-XwY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="arE-z0-2Kq"/>
+                <constraint firstItem="vmP-KF-NqF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cGU-EF-7eF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vmP-KF-NqF" secondAttribute="trailing" id="emN-4K-y2y"/>
+                <constraint firstItem="xW0-WK-tQl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="jkk-Nu-PZB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xW0-WK-tQl" secondAttribute="trailing" constant="10" id="ndf-cW-Qet"/>
+                <constraint firstItem="xW0-WK-tQl" firstAttribute="top" secondItem="PG8-GI-D1r" secondAttribute="bottom" constant="15" id="ono-2v-Nkn"/>
+                <constraint firstItem="3B1-9l-XwY" firstAttribute="top" secondItem="vmP-KF-NqF" secondAttribute="bottom" constant="15" id="rwS-9S-ScR"/>
+                <constraint firstItem="g4C-vO-coC" firstAttribute="height" secondItem="PG8-GI-D1r" secondAttribute="height" id="sNb-7f-CiY"/>
+                <constraint firstItem="PG8-GI-D1r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="sm4-3O-lqo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9kG-0d-f9j" secondAttribute="trailing" constant="20" id="wg2-v5-Cos"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="8.6956521739130448" y="37.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backText" width="16" height="16"/>
+    </resources>
+</document>

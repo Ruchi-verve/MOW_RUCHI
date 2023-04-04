@@ -1,0 +1,6 @@
+framework module Pods_MobilityOnWheel {
+  umbrella header "Pods-MobilityOnWheel-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CheckoutData" representedClassName="CheckoutData" syncable="YES">
+        <attribute name="bounceBack" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cashTotal" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="companyID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="companyTaxRate" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="createdBy" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="creditTotal" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="customerID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerPickupLocationID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="deliveryFee" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="deliveryFeeWithTax" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="deviceOrignalPriceWithChairPad" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="equipmentOrderDetailRequest" optional="YES" attributeType="Binary"/>
+        <attribute name="isAcceptBonusDayLocation" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isCompanyOrder" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isPrimaryOrder" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isRewardTurnOn" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="listEquipmentOrderDetail" optional="YES" attributeType="Binary"/>
+        <attribute name="occupantID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="operatorID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="orderID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="paymentProfileID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pickupLocationID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pickupLocationTaxRate" optional="YES" attributeType="Decimal" defaultValueString="0"/>
+        <attribute name="priceAdjustment" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="priceWithTax" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="primaryOrderId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="taxOnPrice" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="totalBonusDays" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES">
+        <attribute name="accessoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="accessoryName" optional="YES" attributeType="String"/>
+        <attribute name="arrId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="arrivalDate" optional="YES" attributeType="String"/>
+        <attribute name="arrivalTime" optional="YES" attributeType="String"/>
+        <attribute name="billingProfileId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="chairPadId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="chairPadPrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="creditTotal" optional="YES" attributeType="String"/>
+        <attribute name="customerId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="deliveryFee" optional="YES" attributeType="String"/>
+        <attribute name="depatureDate" optional="YES" attributeType="String"/>
+        <attribute name="depatureTime" optional="YES" attributeType="String"/>
+        <attribute name="destination" optional="YES" attributeType="String"/>
+        <attribute name="destinationId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="deviceTypeId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="extenstionDays" optional="YES" attributeType="String"/>
+        <attribute name="extentionPrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="generateBonus" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="handConId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="imgPath" optional="YES" attributeType="String"/>
+        <attribute name="isDefault" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isDefaultOperator" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isEditedOrder" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isExp" optional="YES" attributeType="String"/>
+        <attribute name="isExtendOrder" optional="YES" attributeType="String"/>
+        <attribute name="isOccupant" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isOrderComplete" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isPrimaryOrder" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isPromoapply" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isRiderRewardApply" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isShippingAddress" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="itemDeliveryFee" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="itemDesc" optional="YES" attributeType="String"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="itemPrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="joyStickId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="occuId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="occupantName" optional="YES" attributeType="String"/>
+        <attribute name="oldArrivalTime" optional="YES" attributeType="String"/>
+        <attribute name="oldArrrivalDate" optional="YES" attributeType="String"/>
+        <attribute name="opeId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="operatorName" optional="YES" attributeType="String"/>
+        <attribute name="orderId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="originalPrice" optional="YES" attributeType="String"/>
+        <attribute name="paidBilingProfileId" optional="YES" attributeType="Integer 32" usesScalarValueType="YES"/>
+        <attribute name="paidBonusDayProfile" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="paidDesricption" optional="YES" attributeType="String"/>
+        <attribute name="paidRewardPoints" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pickupLoc" optional="YES" attributeType="String"/>
+        <attribute name="pickupLocId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="preWheelId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="priceAdjustment" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="primaryOrderId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="promoCode" optional="YES" attributeType="String"/>
+        <attribute name="promoId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="promotionType" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="promoValue" optional="YES" attributeType="String"/>
+        <attribute name="regPrice" optional="YES" attributeType="Float" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="rentalPeriod" optional="YES" attributeType="String"/>
+        <attribute name="rewardPoint" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="shippingAddressLine1" optional="YES" attributeType="String"/>
+        <attribute name="shippingAddressLine2" optional="YES" attributeType="String"/>
+        <attribute name="shippingCheckBox" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="shippingCity" optional="YES" attributeType="String"/>
+        <attribute name="shippingDeliveryNote" optional="YES" attributeType="String"/>
+        <attribute name="shippingStateID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="shippingStateName" optional="YES" attributeType="String"/>
+        <attribute name="shippingZipcode" optional="YES" attributeType="String"/>
+        <attribute name="strChairpad" optional="YES" attributeType="String"/>
+        <attribute name="strDevicePropertyIds" optional="YES" attributeType="String"/>
+        <attribute name="strHandCon" optional="YES" attributeType="String"/>
+        <attribute name="strJoyStick" optional="YES" attributeType="String"/>
+        <attribute name="strPreffWheel" optional="YES" attributeType="String"/>
+        <attribute name="taxRate" optional="YES" attributeType="String"/>
+        <attribute name="total" optional="YES" attributeType="String"/>
+        <attribute name="totalBonusDays" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="CheckoutData" positionX="-99" positionY="144" width="128" height="449"/>
+        <element name="Users" positionX="-63" positionY="-18" width="128" height="1184"/>
+    </elements>
+</model>

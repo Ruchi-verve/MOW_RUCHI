@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto_regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="SelectDestCell" id="QWg-JQ-G0h" customClass="SelectDestCell" customModule="MobilityOnWheel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QWg-JQ-G0h" id="yU6-ql-d92">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-KM-ZA9">
+                        <rect key="frame" x="40" y="14" width="366" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="20"/>
+                        </variation>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-WV-AnD">
+                        <rect key="frame" x="15" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5iR-rg-ag3">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstAttribute="width" constant="20" id="c7H-Bm-X5b">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                        </constraints>
+                        <state key="normal" title="Button" image="icon_deselect"/>
+                        <state key="selected" image="icon_select"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hz8-WV-AnD" firstAttribute="centerY" secondItem="yU6-ql-d92" secondAttribute="centerY" id="2Qe-Eh-nQj"/>
+                    <constraint firstAttribute="trailing" secondItem="lgh-KM-ZA9" secondAttribute="trailing" constant="8" id="ZJV-PA-OZM">
+                        <variation key="heightClass=regular-widthClass=regular" constant="16"/>
+                    </constraint>
+                    <constraint firstItem="hz8-WV-AnD" firstAttribute="leading" secondItem="yU6-ql-d92" secondAttribute="leading" constant="15" id="dNg-EG-yiR"/>
+                    <constraint firstItem="hz8-WV-AnD" firstAttribute="centerY" secondItem="lgh-KM-ZA9" secondAttribute="centerY" id="keW-Bd-Fb3"/>
+                    <constraint firstItem="lgh-KM-ZA9" firstAttribute="leading" secondItem="hz8-WV-AnD" secondAttribute="trailing" constant="5" id="y8p-QS-glB">
+                        <variation key="heightClass=regular-widthClass=regular" constant="10"/>
+                    </constraint>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnRadio" destination="hz8-WV-AnD" id="WAZ-dy-Tqc"/>
+                <outlet property="lblDestName" destination="lgh-KM-ZA9" id="6wU-E7-0UI"/>
+            </connections>
+            <point key="canvasLocation" x="392.75362318840581" y="51.5625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_deselect" width="170.5" height="170.5"/>
+        <image name="icon_select" width="50" height="50"/>
+    </resources>
+</document>

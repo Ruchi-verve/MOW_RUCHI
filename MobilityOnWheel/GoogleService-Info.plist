@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>29296744336-sbeceferanjkqo76hv0iurc7i0b42me4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.29296744336-sbeceferanjkqo76hv0iurc7i0b42me4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCv-679fhdRm5EuKYqDDmH_DiY9VaONld8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>29296744336</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mow.cash.ios</string>
+	<key>PROJECT_ID</key>
+	<string>mow-cash-app-e4778</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mow-cash-app-e4778.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:29296744336:ios:b0345ced5f3458f9010515</string>
+</dict>
+</plist>
